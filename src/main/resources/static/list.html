@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Entity List</title>
+</head>
+<body>
+    <h1>Entity List</h1>
+    <table>
+        <tr th:each="entity : ${entities}">
+            <td th:text="${entity.id}"></td>
+            <!-- Add other properties here -->
+        </tr>
+    </table>
+</body>
+</html>

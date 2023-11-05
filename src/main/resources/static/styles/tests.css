@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&display=swap');
+
+* { padding: 0; margin: 0; }
+
+html, body {
+  height: 100%;
+}
+
+*{
+    margin: 0 auto ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100%;
+  background-color: #121212;
+}
+
+body > * {
+  flex-shrink: 0;
+}
+
+/* STYLE OF SIDEBAR */
+
+.userBtn:visited {
+  text-decoration: none;
+  color: #777777;
+}
+
+.userBtn:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3.7vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #121212;
+  box-shadow: 0 0 10px rgba(100, 100, 100, 1);
+}
+
+nav .logo{
+  display: flex;
+  width: 23%;
+  align-items: center;
+  margin: 0;
+  padding-left: 1.4%;
+}
+
+.logo .menu-icon{
+  font-size: 3vw;
+  color: #777777;
+  cursor: pointer;
+  margin: 0;
+}
+
+nav .logo#l2{
+  width: 100%;
+  margin: 0 0 0 5%;
+} 
+
+.logo .name{
+  cursor: default;
+  height: 2.15vw;
+  padding-top: 0.4vw;
+  margin: 0 0 0 25%;
+}
+
+.name img{
+  /* padding-left:90%; */
+  height: 1.563vw;
+}
+
+.logo .name-logo{
+  font-size: 1.563vw;
+  font-weight: 600;
+  color: white;
+  margin: 0 0 0 0;
+  cursor: default;
+}
+
+.logo .name-logo2{
+  cursor: default;
+  font-size: 1.563vw;
+  font-weight: 600;
+  color: white;
+  margin: 0 0 0 0;
+}
+
+.search{
+  display: flex;
+  width: 58%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 0;
+  height: 100%;
+}
+
+.search-bar{
+  display: flex;
+  align-items: center;
+  height: 2.5vw;
+  width: 100%;
+  background:rgba(255, 255, 255, 0.12);
+}
+
+.search-bar input{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  font: 500;
+  font-size: 1.04vw;
+  color: #fff;
+  padding: 1.6% 0;
+}
+
+.search-bar button{
+  border: 0;
+  padding: 2.1% 1.6% 1.8% 1.6%;
+  background: transparent;
+}
+
+.search-bar button .search-icon{
+  color: #707070;
+  font-size: 1.1vw;
+  cursor: pointer;
+}
+
+.topIcons{
+  display: flex;
+  width: 19%;
+  font-size: 2.5vw;
+  color: #777777;
+  cursor: pointer;
+  padding-left: 3%;
+  padding-right: 1.4%;
+  margin: 0 0 0 0;
+}
+
+.topIcons i{
+  padding: 0 0 0 0;
+}
+
+nav .sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 16%;
+  padding: 2% 0;
+  background-color: #121212;
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+nav.open .sidebar {
+  left: 0;
+}
+
+.sidebar .sidebar-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10% 5.2%;
+}
+
+.sidebar-content .lists{
+  width: 100%;
+  justify-content: left;
+}
+
+.sidebar-content .list {
+  list-style: none;
+}
+
+.list .nav-link {
+  display: flex;
+  justify-content: left;
+  margin: 0.41vw 0;
+  padding: 0.729vw 0.625vw;
+  border-radius: 0.7vw;
+  text-decoration: none;
+}
+.lists .nav-link:hover {
+  background-color: grey;
+}
+.nav-link .icon {
+  margin: 0 0.729vw 0 0.729vw;
+  font-size: 1.042vw;
+  color: #777777;
+}
+.nav-link .link {
+  font-size: 0.833vw;
+  margin: auto 0;
+  color: #777777;
+  font-weight: 400;
+}
+.lists .nav-link:hover .icon,
+.lists .nav-link:hover .link {
+  color: #fff;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 1000vh;
+  width: 200%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  background: rgba(0, 0, 0, 0.3);
+}
+nav.open ~ .overlay {
+  opacity: 1;
+  left: 16%;
+  pointer-events: auto;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto 1fr;
+  width: 100%;
+  margin-top: 3.6%;
+  vertical-align: top;
+}
+
+.column {
+  flex-direction: column;
+  padding: 0.9%;
+  display: flex;
+  vertical-align: top;
+}
+
+.smaller {
+  flex: 1;
+}
+
+.larger {
+  flex: 3;
+  flex-grow: 1;
+  text-align: start;
+}
+
+.larger p {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 0 0;
+  font-size: 1.2vw;
+  text-align: justify;
+}
+
+.larger h1 {
+  color: #b276b4;
+  padding: 3.6% 0;
+  /* padding-top: 3%; */
+  font-size: 2vw;
+}
+.larger h2 {
+  color: #b29bb3;
+  padding-top: 50px;
+  font-size: 2vw;
+}
+
+.larger .p1 {
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  font-size: 1.5vw;
+  padding: 1.5% 0;
+}
+.larger .p2 {
+  font-weight: 800;
+  padding: 1% 0;
+  font-size: 1.2vw;
+}

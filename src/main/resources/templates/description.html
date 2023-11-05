@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delta-Wiki</title>
+  <link rel="icon" type="image/png" href="./images/Logo.png">
+  <link rel="stylesheet" href="./styles/description.css">
+  <!-- icons CSS -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <!-- Start Of NavBar -->
+    <nav>
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+        <a class="name" href=""><img src="./images/Logo.png" alt="name" /></a>
+        <span class="name-logo">W I K I</span>
+      </div>
+  
+      <div class="search">
+        <form action="https://www.google.com/search" method="get" class="search-bar">
+          <button type="submit"><i class='bx bx-search search-icon'></i></button>
+          <input type="text" placeholder="Buscar en δWIKI" name="q" />
+        </form>
+  
+      </div>
+  
+      <div class="topIcons">
+        <i class='bx bx-moon dark-icon'></i>
+        <a class="userBtn" href="/register"><i class='bx bx-user user-icon'></i></a>
+        <i class='bx bx-cog settings-icon'></i>
+      </div>
+  
+      <div class="sidebar">
+        <div class="logo" id="l2">
+          <a class="name" href=""><img src="./images/Logo.png" alt="name" height="30" /></a>
+          <span class="name-logo2">W I K I</span>
+        </div>
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
+              <a href="/" class="nav-link">
+                <i class="bx bx-group icon"></i>
+                <span class="link">Equipo</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="/description" class="nav-link">
+                <i class="bx bx-message-rounded icon"></i>
+                <span class="link">Descripción</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="/requirements" class="nav-link">
+                <i class="bx bx-git-pull-request icon"></i>
+                <span class="link">Requerimientos</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="/architecture" class="nav-link">
+                <i class="bx bx-arch icon"></i>
+                <span class="link">Arquitectura</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-test-tube icon"></i>
+                <span class="link">Pruebas</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-desktop icon"></i>
+                <span class="link">Despliegue</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="/contact" class="nav-link">
+                <i class="bx bxl-gmail icon"></i>
+                <span class="link">Contáctenos</span>
+              </a>
+            </li>
+          </ul>
+          <div class="bottom-cotent">
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-cog icon"></i>
+                <span class="link">Settings</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-log-out icon"></i>
+                <span class="link">Logout</span>
+              </a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Of NavBar -->
+  <div class="content">
+    <div class="column smaller"></div>
+    <div class="column larger">
+      <h1>Historias de Usuario para Usuario Votante</h1>
+      <p class="p1">HUV.1. Creación de cuenta</p>
+      <p>Como un usuario votante nuevo, quiero poder crear una cuenta en la página web de música para acceder a
+        todas las características y funcionalidades.</p>
+      <p class="p2">Criterios de aceptación:</p>
+      <p>• El usuario debe proporcionar un nombre de usuario válido, una dirección de correo electrónico y una
+        contraseña segura al registrarse.<br>
+        • Después de la creación exitosa de la cuenta, debo recibir un correo electrónico de confirmación.</p>
+
+      <p class="p1">HUV.2. Activación de cuenta</p>
+      <p>Como usuario votante registrado, quiero poder activar mi cuenta haciendo clic en el enlace de
+        confirmación enviado a mi dirección de correo electrónico.
+      <p class="p2">Criterios de aceptación:</p>
+      <p>• Debe generarse un enlace de activación único y enviado al correo electrónico proporcionado durante la
+        creación de la cuenta.<br>
+        • Al hacer clic en el enlace de activación, mi cuenta debe activarse y poder iniciar sesión.</p>
+      <p class="p1">HUV.3. Autenticación de usuario</p>
+      <p>Como usuario votante, quiero poder iniciar sesión en mi cuenta para acceder a las funciones
+        personalizadas y votar por listas de reproducción.</p>
+      <p class="p2">Criterios de aceptación:</p>
+      <p>• Debo poder ingresar mi nombre de usuario y contraseña en el formulario de inicio de sesión.<br>
+        • Después de iniciar sesión correctamente, debo ser redirigido a mi página de perfil personalizada.
+
+      <p class="p1">HUV.4. Ver listas por género musical creadas</p>
+      <p>Como usuario votante, quiero poder ver las listas de reproducción creadas por otros usuarios, filtradas
+        por género musical, para descubrir nueva música.</p>
+      <p class="p2">Criterios de aceptación:</p>
+      <p>• Debe haber una sección de búsqueda y navegación por género en la página de inicio.<br>
+        • Al seleccionar un género, debo ver una lista de listas de reproducción creadas por otros usuarios para ese
+        género específico.</p>
+
+      <p class="p1">HUV.5. Buscar una canción</p>
+      <p>Como usuario votante, quiero tener la capacidad de buscar una canción específica para encontrar las listas de
+        reproducción en las que está incluida.</p>
+      <p class="p2">Criterios de aceptación:</p>
+      <p>• Debe haber un campo de búsqueda en la página de inicio.<br>
+        • Al ingresar el nombre de una canción, debo ver una lista de listas de reproducción que contienen esa
+        canción.</p>
+
+      <p class="p1">HUV.6. Votar/Desvotar por una lista
+
+      <p>Como usuario votante, quiero tener la opción de votar positiva o negativamente por una lista de
+        reproducción para expresar mi opinión sobre su contenido.
+
+      <p class="p2">Criterios de aceptación:</p>
+      <p>• En cada lista de reproducción, debe haber botones distintos para votar positivamente y
+        negativamente.<br>
+        • Solo puedo votar una vez por cada lista de reproducción.<br>
+        • Debo poder cambiar mi voto de positivo a negativo y viceversa si cambio de opinión.</p>
+
+      <h1>Historias de Usuario para Usuario Administrador</h1>
+      <p class="p1">HUV.1. Autenticación de usuario</p>
+      <p>Como administrador, quiero poder iniciar sesión en mi cuenta de administrador para acceder a las
+        herramientas de gestión del sitio.</p>
+      <p class="p2">Criterios de aceptación:</p>
+      <p>• Debo ingresar las credenciales de administrador en el formulario de inicio de sesión.<br>
+        • Después de iniciar sesión, debo ser redirigido a un panel de control administrativo.</p>
+
+      <p class="p1">HUV.2. CRUD Géneros musicales
+      <p>Como administrador, quiero poder realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en la
+        lista de géneros musicales disponibles en la página.</p>
+      <p class="p2">Criterios de aceptación:</p>
+      <p>• Debo tener acceso a una sección de administración de géneros musicales en el panel de control.<br>
+        • Puedo crear nuevos géneros musicales, editar sus nombres y descripciones, ver una lista de todos los
+        géneros existentes y eliminar géneros no deseados.</p>
+
+      <p class="p1">HUV.3. CRUD Canciones
+      <p>Como administrador, quiero poder realizar operaciones CRUD en la lista de canciones disponibles en la
+        página.</p>
+
+      <p class="p2">Criterios de aceptación:</p>
+      <p>• Debo tener acceso a una sección de administración de canciones en el panel de control.<br>
+        • Puedo agregar nuevas canciones proporcionando información como título, artista, género y
+        enlace.<br>
+        • Puedo editar la información de las canciones existentes, ver una lista de todas las canciones y
+        eliminar canciones si es necesario.</p>
+    </div>
+    <div class="column smaller"></div>
+  </div>
+
+  <section class="overlay"></section>
+  <script src="./js/sidebar.js"></script>
+
+</body>
+
+</html>

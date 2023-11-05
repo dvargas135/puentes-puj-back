@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delta-Wiki</title>
+  <link rel="icon" type="image/png" href="./images/Logo.png">
+  <link rel="stylesheet" href="./styles/contact.css">
+  <!-- icons CSS -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <!-- Start Of NavBar -->
+  <nav>
+    <div class="logo">
+      <i class="bx bx-menu menu-icon"></i>
+      <a class="name" href=""><img src="./images/Logo.png" alt="name" height="30" style="margin: 5px 0 0 0px;" /></a>
+      <span class="name-logo">W I K I</span>
+    </div>
+
+    <div class="sidebar">
+      <div class="logo" id="l2">
+        <a class="name2" href=""><img src="./images/Logo.png" alt="name" height="30" /></a>
+        <span class="name-logo2">W I K I</span>
+      </div>
+      <div class="sidebar-content">
+        <ul class="lists">
+          <li class="list">
+            <a href="/" class="nav-link">
+              <i class="bx bx-group icon"></i>
+              <span class="link">Equipo</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="/description" class="nav-link">
+              <i class="bx bx-message-rounded icon"></i>
+              <span class="link">Descripción</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="/requirements" class="nav-link">
+              <i class="bx bx-git-pull-request icon"></i>
+              <span class="link">Requerimientos</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="/architecture" class="nav-link">
+              <i class="bx bx-arch icon"></i>
+              <span class="link">Arquitectura</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-test-tube icon"></i>
+              <span class="link">Pruebas</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-desktop icon"></i>
+              <span class="link">Despliegue</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="/contact" class="nav-link">
+              <i class="bx bxl-gmail icon"></i>
+              <span class="link">Contáctenos</span>
+            </a>
+          </li>
+        </ul>
+        <div class="bottom-cotent">
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-cog icon"></i>
+              <span class="link">Settings</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-log-out icon"></i>
+              <span class="link">Logout</span>
+            </a>
+          </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- End Of NavBar -->
+  <div class="container">
+    <form action="https://formspree.io/f/myyqeqeg" method="post">
+      <h1>Formulario de contacto</h1>
+      <input type="text" name="nombres" id="nombre" placeholder="Nombres" autocomplete="off" required>
+      <span id="name-error"></span>
+      <input type="text" name="apellidos" id="apellido" placeholder="Apellidos" autocomplete="off" required>
+      <span id="lname-error"></span>
+      <input type="text" name="email" id="email" placeholder="Correo electronico" autocomplete="off" required>
+      <span id="email-error"></span>
+      <textarea type="text" name="asunto" id="asunto" rows="5" cols="60" placeholder="Motivo de su mensaje"
+        autocomplete="off" required></textarea>
+      <span id="message-error"></span>
+      <button type="submit" onclick="validate()">Enviar</button>
+      <span hidden id="submit-error"></span>
+    </form>
+  </div>
+
+  <section class="overlay"></section>
+  <script src="./js/sidebar.js"></script>
+  <script src="./js/formValidation.js"></script>
+</body>
+
+</html>

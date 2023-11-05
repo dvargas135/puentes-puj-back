@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&display=swap');
+
+*{
+    margin: 0px auto ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+}
+
+body{
+    min-height: 100%;
+    background-color: #121212;
+}
+
+.container{
+    padding: 12% 0 10% 0;
+    text-align: center;
+}
+
+h1{
+    cursor: default;
+    color: rgba(255, 255, 255,70%);
+    padding-top: 10px;
+    text-align: center;
+    font-size: 3.125vw;
+    margin-bottom: 20px;
+    pointer-events: default;
+    text-shadow: 3px 3px 3px rgba(186, 104, 200, 60%);
+}
+
+input[name="nombres"]{
+    background-color: rgba(255, 255, 255, 70%);
+    width: 24.5%;
+    margin: 0 0.758% 1.01% 25%;
+    font-size: 1.042vw;
+    padding: 0.808% 0.808%;
+    border-width: 3px;
+    border-color: transparent;  
+}
+
+input[name="apellidos"]{
+    background-color: rgba(255, 255, 255, 70%);
+    width: 24.5%;
+    margin: 0 25% 1.01% 0;
+    font-size: 1.042vw;
+    padding: 0.808% 0.808%;
+    border-width: 3px;
+    border-color: transparent;  
+}
+
+input[name="email"]{
+    background-color: rgba(255, 255, 255, 70%);
+    width: 50%;
+    margin: 0 0% 1.01% ;
+    font-size: 1.042vw;
+    padding: 0.808% 0.808%;
+    border-width: 3px;
+    border-color: transparent;  
+}
+
+input:focus{
+    outline: none;
+    border-color: rgba(186, 104, 200, 90%);
+    border-width: 3px;
+    transition: all 0.4s ease;
+}
+
+textarea{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 70%);
+    width: 25%;
+    margin: 0 25% 1.263% 25%;
+    font-size: 1.042vw;
+    padding: 0.808% 0.808%;
+    border-width: 3px;
+    border-color: transparent;
+    resize: none;
+}
+
+textarea:focus{
+    outline: none;
+    text-align: start;
+    border-color: rgba(186, 104, 200, 90%);
+    border-width: 3px;
+    width: 50%;
+    transition: all 0.4s ease;
+}
+
+button{
+    background-color: rgba(186, 104, 200, 90%);
+    border-color: transparent;
+    border-radius: 15px;
+    font-size: 100%;
+    padding: 0.505% 0.909%;
+    text-align: center;
+    display: flex;
+    /* margin: auto; */
+    color: rgba(255, 255, 255, 70%);
+}
+
+button:hover{
+    opacity: 80%;
+    border-color: white;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.container span i{
+    color:rgba(186, 104, 200, 90%)
+}
+
+span#submit-error{
+    vertical-align: center;
+    height: 30px;
+    padding: 5px 10px;
+    width: auto;
+    margin:  15px 0% 0 0%;
+    display: none;
+    color: #fff;
+    background-color: rgba(255, 0, 0, 0.4);
+    border-radius: 30px;
+}
+
+
+
+/* STYLE OF SIDEBAR */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #121212;
+    box-shadow: 0 0 10px rgba(100, 100, 100, 1);
+  }
+
+  nav .logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 27px;
+  }
+
+  nav .logo#l2{
+    margin: 0 0 0 0;
+  } 
+
+  .logo .name{
+    cursor: default;
+    margin: 2px 0 0 43%;
+  }
+
+  .logo .name2{
+    cursor: default;
+    margin: 7px 0 0 auto;
+  }
+
+  .logo .menu-icon{
+    margin: 0 0 0 0;
+    font-size: 3vw;
+    color: #777777;
+    cursor: pointer;
+  }
+
+  .logo .name-logo{
+    font-size: 1.563vw;
+    font-weight: 600;
+    color: white;
+    margin: 0 auto 0 0;
+    cursor: default;
+  }
+
+  .logo .name-logo2{
+    cursor: default;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    margin: 0 auto 0 0;
+  }
+
+  .search{
+    display: flex;
+    width: 1103px;
+    
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 0;
+    height: 50px;
+  }
+
+  .search-bar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1103px;
+    background:rgba(255, 255, 255, 0.12);
+  }
+
+  .search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font: 500;
+    font-size: 15px;
+    color: #fff;
+    padding: 15px 0 15px 0;
+  }
+
+  .search-bar button{
+    border: 0;
+    padding: 17px 13px 15px 13px;
+    background: transparent;
+  }
+
+  .search-bar button .search-icon{
+    color: #707070;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .topIcons{
+    display: flex;
+    width: 250px;
+    font-size: 40px;
+    color: #777777;
+    cursor: pointer;
+    margin: 0 0px 0 100px ;
+  }
+
+  .topIcons i{
+    padding-right: 0px;
+  }
+
+  nav .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 260px;
+    padding: 20px 0;
+    background-color: #121212;
+    box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+  }
+
+  nav.open .sidebar {
+    left: 0;
+  }
+
+  .sidebar .sidebar-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 16px;
+  }
+
+  .sidebar-content .lists{
+    width: 100%;
+    justify-content: left;
+  }
+
+  .sidebar-content .list {
+    list-style: none;
+  }
+  
+  .list .nav-link {
+    display: flex;
+    /* align-items: ; */
+    justify-content: left;
+    margin: 8px 0;
+    padding: 14px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  .lists .nav-link:hover {
+    background-color: grey;
+  }
+  .nav-link .icon {
+    margin: 0 14px 0 14px;
+    font-size: 20px;
+    color: #777777;
+  }
+  .nav-link .link {
+    font-size: 16px;
+    margin: auto 0;
+    color: #777777;
+    font-weight: 400;
+  }
+  .lists .nav-link:hover .icon,
+  .lists .nav-link:hover .link {
+    color: #fff;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 1000vh;
+    width: 200%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  nav.open ~ .overlay {
+    opacity: 1;
+    left: 260px;
+    pointer-events: auto;
+  }

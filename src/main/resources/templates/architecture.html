@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delta-Wiki</title>
+  <link rel="icon" type="image/png" href="./images/Logo.png">
+  <link rel="stylesheet" href="./styles/architecture.css">
+  <!-- icons CSS -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <!-- Start Of NavBar -->
+    <nav>
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+        <a class="name" href=""><img src="./images/Logo.png" alt="name" /></a>
+        <span class="name-logo">W I K I</span>
+      </div>
+  
+      <div class="search">
+        <form action="https://www.google.com/search" method="get" class="search-bar">
+          <button type="submit"><i class='bx bx-search search-icon'></i></button>
+          <input type="text" placeholder="Buscar en δWIKI" name="q" />
+        </form>
+  
+      </div>
+  
+      <div class="topIcons">
+        <i class='bx bx-moon dark-icon'></i>
+        <a class="userBtn" href="/register"><i class='bx bx-user user-icon'></i></a>
+        <i class='bx bx-cog settings-icon'></i>
+      </div>
+  
+      <div class="sidebar">
+        <div class="logo" id="l2">
+          <a class="name" href=""><img src="./images/Logo.png" alt="name" height="30" /></a>
+          <span class="name-logo2">W I K I</span>
+        </div>
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
+              <a href="/" class="nav-link">
+                <i class="bx bx-group icon"></i>
+                <span class="link">Equipo</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="/description" class="nav-link">
+                <i class="bx bx-message-rounded icon"></i>
+                <span class="link">Descripción</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="/requirements" class="nav-link">
+                <i class="bx bx-git-pull-request icon"></i>
+                <span class="link">Requerimientos</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="/architecture" class="nav-link">
+                <i class="bx bx-arch icon"></i>
+                <span class="link">Arquitectura</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-test-tube icon"></i>
+                <span class="link">Pruebas</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-desktop icon"></i>
+                <span class="link">Despliegue</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="/contact" class="nav-link">
+                <i class="bx bxl-gmail icon"></i>
+                <span class="link">Contáctenos</span>
+              </a>
+            </li>
+          </ul>
+          <div class="bottom-cotent">
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-cog icon"></i>
+                <span class="link">Settings</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-log-out icon"></i>
+                <span class="link">Logout</span>
+              </a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Of NavBar -->
+  <div class="lista-contenidos">
+  </div>
+  <div class="contenido">
+    <h1 class="title">&lt; Arquitectura &gt;</h1>
+    <h1>Modelo Conceptual</h1>
+    <img class="img" id="lorem" src="./images/modelo_conceptual.png" alt="logo">
+    <p>El modelo conceptual para la página web de música se centra en la representación de los conceptos clave
+      relacionados con la industria musical y la experiencia del usuario en la plataforma. Este modelo no se adentra en
+      los aspectos técnicos, sino que se enfoca en capturar las ideas esenciales, como la interacción de los usuarios
+      con listas de reproducción, canciones y géneros musicales. Permite a los equipos de desarrollo y a los
+      stakeholders comprender y discutir las interacciones clave antes de traducirlas en soluciones técnicas.<br></p>
+    <h1>Modelo contenedores</h1>
+    <img class="img" src="./images/modelo_contenedores.png" alt="logo">
+    <p>El modelo de contenedores para la página web de música describe la estructura organizativa de los diferentes
+      componentes que forman la plataforma. Aquí, los contenedores representan unidades lógicas de ejecución, como la
+      aplicación web en sí, los servicios de autenticación, la base de datos de canciones y las interacciones con
+      proveedores externos (por ejemplo, servicios de correo electrónico para confirmaciones de cuenta). Este modelo
+      visualiza cómo estos contenedores se relacionan y se distribuyen, ayudando a planificar la infraestructura y
+      comprender la arquitectura general de la página web.<br></p>
+    <h1>Modelo de Componentes</h1>
+    <img class="img" id="lorem" src="./images/modelo_componente.png" alt="logo">
+    <p>El modelo de componentes para la página web de música se centra en los detalles internos de cada componente
+      individual dentro de la plataforma. Cada componente, como el sistema de búsqueda de canciones, la gestión de
+      listas de reproducción o el módulo de autenticación, se desglosa para mostrar cómo están construidos y cómo
+      interactúan entre sí. Este modelo permite a los desarrolladores comprender cómo se ensamblan y funcionan los
+      diversos componentes para proporcionar la funcionalidad completa de la página web de
+      música.<br><br><br><br><br><br><br><br><br></p>
+  </div>
+  <section class="overlay"></section>
+  <script src="./js/sidebar.js"></script>
+</body>
+
+</html>

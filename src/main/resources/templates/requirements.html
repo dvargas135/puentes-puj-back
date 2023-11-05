@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta-Wiki</title>
+    <link rel="icon" type="image/png" href="./images/Logo.png">
+    <link rel="stylesheet" href="./styles/requirements.css">
+    <!-- icons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+      <!-- Start Of NavBar -->
+  <nav>
+    <div class="logo">
+      <i class="bx bx-menu menu-icon"></i>
+      <a class="name" href=""><img src="./images/Logo.png" alt="name" /></a>
+      <span class="name-logo">W I K I</span>
+    </div>
+
+    <div class="search">
+      <form action="https://www.google.com/search" method="get" class="search-bar">
+        <button type="submit"><i class='bx bx-search search-icon'></i></button>
+        <input type="text" placeholder="Buscar en δWIKI" name="q" />
+      </form>
+
+    </div>
+
+    <div class="topIcons">
+      <i class='bx bx-moon dark-icon'></i>
+      <a class="userBtn" href="/register"><i class='bx bx-user user-icon'></i></a>
+      <i class='bx bx-cog settings-icon'></i>
+    </div>
+
+    <div class="sidebar">
+      <div class="logo" id="l2">
+        <a class="name" href=""><img src="./images/Logo.png" alt="name" height="30" /></a>
+        <span class="name-logo2">W I K I</span>
+      </div>
+      <div class="sidebar-content">
+        <ul class="lists">
+          <li class="list">
+            <a href="/" class="nav-link">
+              <i class="bx bx-group icon"></i>
+              <span class="link">Equipo</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="/description" class="nav-link">
+              <i class="bx bx-message-rounded icon"></i>
+              <span class="link">Descripción</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="/requirements" class="nav-link">
+              <i class="bx bx-git-pull-request icon"></i>
+              <span class="link">Requerimientos</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="/architecture" class="nav-link">
+              <i class="bx bx-arch icon"></i>
+              <span class="link">Arquitectura</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-test-tube icon"></i>
+              <span class="link">Pruebas</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-desktop icon"></i>
+              <span class="link">Despliegue</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="/contact" class="nav-link">
+              <i class="bx bxl-gmail icon"></i>
+              <span class="link">Contáctenos</span>
+            </a>
+          </li>
+        </ul>
+        <div class="bottom-cotent">
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-cog icon"></i>
+              <span class="link">Settings</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-log-out icon"></i>
+              <span class="link">Logout</span>
+            </a>
+          </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- End Of NavBar -->
+    <div class="content">
+        <div class="column smaller"></div>
+        <div class="column larger">
+            <h1>Requerimientos Funcionales:</h1>
+            <p class="p1">Registro de Usuario:</p>
+            <p>• Los usuarios deben poder crear cuentas proporcionando información básica como nombre de usuario,
+                dirección de
+                correo electrónico y contraseña.<br>
+                • Los usuarios deben recibir correos electrónicos de confirmación para activar sus cuentas.
+            </p>
+
+            <p class="p1">Autenticación de Usuario:</p>
+            <p>Los usuarios deben poder iniciar sesión en sus cuentas utilizando su nombre de usuario y contraseña.</p>
+
+            <p class="p2">Exploración de Listas de Reproducción:</p>
+            <p>
+                Los usuarios deben poder buscar y navegar por listas de reproducción filtradas por género musical.<br>
+                Deben poder ver detalles de las listas de reproducción, incluyendo canciones y votos.
+            </p>
+
+
+            <p class="p2">Votación en Listas de Reproducción: </p>
+            <p>
+                Los usuarios deben poder votar positiva o negativamente por las listas de reproducción.<br>
+                Solo se permite un voto por usuario por lista de reproducción.
+            </p>
+
+
+            <p class="p2">Búsqueda de Canciones:</p>
+            <p>
+                Los usuarios deben poder buscar canciones por nombre y ver en qué listas de reproducción están
+                incluidas.
+            </p>
+
+            <p class="p2">Gestión de Géneros Musicales (Administrador): </p>
+            <p>
+                El administrador debe poder agregar, editar y eliminar géneros musicales.
+            </p>
+
+            <p class="p2">Gestión de Canciones (Administrador):</p>
+            <p>
+                El administrador debe poder agregar, editar y eliminar canciones, incluyendo detalles como título,
+                artista y género.
+            </p>
+
+            <h1>Requerimientos No Funcionales:</h1>
+            <p class="p2">Usabilidad:</p>
+            <p>
+                La interfaz de usuario debe ser intuitiva y fácil de usar para usuarios de diferentes niveles de
+                habilidad.<br>
+                Los tiempos de carga de la página deben ser razonables para brindar una experiencia fluida.
+            </p>
+
+
+            <p class="p2">Seguridad:</p>
+            <p>
+                La información del usuario, como contraseñas y datos personales, debe almacenarse de manera segura
+                utilizando
+                técnicas de cifrado adecuadas.<br>
+                La autenticación y la autorización deben implementarse de manera segura para prevenir accesos no
+                autorizados.
+            </p>
+
+            <p class="p2">Escalabilidad:
+            <p>
+                La aplicación debe ser capaz de manejar un aumento en el número de usuarios y listas de reproducción sin
+                degradar el rendimiento.
+            </p>
+
+            <p class="p2">Disponibilidad</p>
+            <p>
+                La página web debe estar disponible y accesible para los usuarios la mayor parte del tiempo, con un
+                tiempo de inactividad planificado mínimo.
+            </p>
+
+            <p class="p2">Rendimiento:</p>
+            <p>
+                Las búsquedas y la carga de listas de reproducción deben realizarse de manera eficiente, incluso cuando
+                hay una gran cantidad de datos.
+            </p>
+
+            <p class="p2">Compatibilidad:</p>
+            <p>
+                La página web debe ser compatible con varios navegadores web modernos y dispositivos, como computadoras
+                de escritorio, tabletas y dispositivos móviles.
+            </p>
+
+            <p class="p2">Mantenibilidad:</p>
+            <p>
+                El código debe estar bien estructurado y documentado para facilitar futuras actualizaciones y mejoras.
+            </p>
+
+            <p>Cumplimiento Legal y Regulatorio:</p>
+            <p>
+                La página web debe cumplir con las leyes de protección de datos y privacidad relevantes, como el RGPD
+                (si aplica).
+            </p>
+        </div>
+        <div class="column smaller"></div>
+    </div>
+
+    <section class="overlay"></section>
+    <script src="./js/sidebar.js"></script>
+
+</body>
+
+</html>
