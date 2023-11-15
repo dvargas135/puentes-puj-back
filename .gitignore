@@ -58,5 +58,5 @@ build/
 .vscode/
 
 ##
-## Configiracion
-# src/main/resources/application.properties
+## Config
+application.properties
