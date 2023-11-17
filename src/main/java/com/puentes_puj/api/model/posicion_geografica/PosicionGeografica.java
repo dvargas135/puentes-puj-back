@@ -2,6 +2,7 @@ package com.puentes_puj.api.model.posicion_geografica;
 
 import java.util.Iterator;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -9,6 +10,7 @@ import javax.persistence.Id;
 import com.amazonaws.util.json.JSONArray;
 import com.amazonaws.util.json.JSONObject;
 
+@Entity
 public class PosicionGeografica {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

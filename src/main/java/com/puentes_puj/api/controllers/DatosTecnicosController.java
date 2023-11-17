@@ -8,10 +8,12 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.puentes_puj.api.model.datos_tecnicos.DatosTecnicos;
 import com.puentes_puj.api.model.datos_tecnicos.DatosTecnicosRepository;
 
+@RestController
 public class DatosTecnicosController {
     
     @Autowired
