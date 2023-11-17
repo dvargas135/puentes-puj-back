@@ -19,7 +19,7 @@ public class SenialController {
 
     // create senial
     @CrossOrigin
-    @PostMapping(value = "/senials/create", produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "/seniales/create", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> createSenial(@RequestBody Senial newSenial) throws Exception {
         HttpHeaders responseHeaders = new HttpHeaders();
         newSenial.setId(null);
