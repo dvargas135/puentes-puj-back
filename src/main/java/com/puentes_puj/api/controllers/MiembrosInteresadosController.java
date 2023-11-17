@@ -19,7 +19,7 @@ public class MiembrosInteresadosController {
 
     // create miembrosInteresados
     @CrossOrigin
-    @PostMapping(value = "/miembrosInteresadoss/create", produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "/miembrosinteresadoss/create", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> createMiembrosInteresados(@RequestBody MiembrosInteresados newMiembrosInteresados) throws Exception {
         HttpHeaders responseHeaders = new HttpHeaders();
         newMiembrosInteresados.setId(null);
