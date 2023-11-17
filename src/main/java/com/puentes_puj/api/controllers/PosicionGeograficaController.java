@@ -19,7 +19,7 @@ public class PosicionGeograficaController {
 
     // create posicionGeografica
     @CrossOrigin
-    @PostMapping(value = "/posicionGeograficas/create", produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "/posicionesgeograficas/create", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> createPosicionGeografica(@RequestBody PosicionGeografica newPosicionGeografica) throws Exception {
         HttpHeaders responseHeaders = new HttpHeaders();
         newPosicionGeografica.setId(null);
