@@ -19,7 +19,7 @@ public class DatosTecnicosController {
 
     // create datosTecnicos
     @CrossOrigin
-    @PostMapping(value = "/datosTecnicoss/create", produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "/datostecnicos/create", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> createDatosTecnicos(@RequestBody DatosTecnicos newDatosTecnicos) throws Exception {
         HttpHeaders responseHeaders = new HttpHeaders();
         newDatosTecnicos.setId(null);
